@@ -48,5 +48,6 @@ class PostController extends Controller
         $post->content = $request->input('content');
         $post->save();
 
-        return 
+        return redirect()->route('posts.show', $post)->with('flash_message', '投稿を編集しました。');
+    }
 }
