@@ -18,3 +18,6 @@ use App\Http\Controllers\PostController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 投稿の一覧ページ
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
