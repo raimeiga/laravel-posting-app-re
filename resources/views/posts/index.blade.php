@@ -35,7 +35,8 @@
                              <p>{{ $post->content }}</p>     
                              
                               <div>
-                                 <a href="{{ route('posts.show', $post) }}">詳細</a>                                
+                                 <a href="{{ route('posts.show', $post) }}">詳細</a>     
+                                 <a href="{{ route('posts.edit', $post) }}">編集</a>                                             
                              </div>
                          </div>
                      </div>
