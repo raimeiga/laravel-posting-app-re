@@ -5,6 +5,8 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>投稿一覧</title>
+
+      @vite(['resources/js/app.js'])
  </head>
  
  <body>
@@ -43,7 +45,7 @@
                                      @method('delete')                                        
                                      <button type="submit">削除</button>
                                  </form>
-                                                                        
+
                              </div>
                          </div>
                      </div>
